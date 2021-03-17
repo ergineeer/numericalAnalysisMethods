@@ -30,3 +30,13 @@ figure('Name','Bisection Method')
 figure('Name','False-Position Method')
 [rootValFP,errorValFP,iterNumbFP,elapsedTimeFP] = ...
     falsePos(func,xl,xu,terminationCriteria,maxIterations);
+
+%% Open Methods - Newton-Raphson Method
+% The Newton-Raphson method is a widely used root-finding algorithm. Method
+% successively and numerically obtains better results and approximations for the roots.
+% It is based on the idea of linear approximation and named after Isaac Newton and Joseph Raphson. 
+% For the derivative of the input function, 
+% It might be useful to use diff + matlabFunction + sym instead.
+figure('Name','Newton-Raphson Method')
+[rootValNR,errorValNR,iterNumbNR,elapsedTimeNR] = ...
+    newtonraphson(func,dFunc,xl,terminationCriteria,maxIterations);
