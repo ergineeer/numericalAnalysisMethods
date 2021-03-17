@@ -18,8 +18,8 @@ maxIterations = 100;
 
 %% Bracketing Methods - Bisection Method 
 % (Binary Chopping - Bolzano's Method)
-% Bisection Method is an iterative application of IVT to numerically 
-% determine roots of a continuous functions. 
+% The Bisection Method is an iterative application of IVT to numerically 
+% determine roots of continuous functions. 
 figure('Name','Bisection Method')
 [rootValBisection,errorValBisection,iterNumbBisection,elapsedTimeBisection] = ...
     bisection(func,xl,xu,terminationCriteria,maxIterations);
