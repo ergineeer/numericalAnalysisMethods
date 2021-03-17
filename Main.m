@@ -1,7 +1,7 @@
 % % % % % % % % % % %
 % 
-% Works, Not Complete
-% 17/03/2021
+% Not Complete
+% 18/03/2021
 % 
 % % % % % % % % % % %
 
@@ -11,6 +11,7 @@ clc
 
 %% Input Function and Variables
 func = @(x) x.^(2)+x-14;
+dFunc = @(x) 2*x+1;
 xl = -14;
 xu = 0;
 terminationCriteria = 0.00001;
