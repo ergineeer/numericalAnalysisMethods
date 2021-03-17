@@ -9,3 +9,6 @@ Root-Finding Algorithms
   - False-Position Method
 - Open Methods
   - Newton-Raphson Method
+
+
+Brent's Method and The Secant Method will be added soon.
