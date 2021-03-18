@@ -14,6 +14,9 @@ func = @(x) x.^(2)+x-14;
 dFunc = @(x) 2*x+1;
 xl = -14;
 xu = 0;
+x1 = -14;
+x2 = -13;
+x3 = -12;
 terminationCriteria = 0.00001;
 maxIterations = 100;
 
@@ -41,3 +44,13 @@ figure('Name','False-Position Method')
 figure('Name','Newton-Raphson Method')
 [rootValNR,errorValNR,iterNumbNR,elapsedTimeNR] = ...
     newtonraphson(func,dFunc,xl,terminationCriteria,maxIterations);
+    
+%% Open Methods - Brent's Method
+% Also known as Van Wijngaarden-Dekker-Brent Method.
+% Brent's Method is a hybrid approach combining the Bisection Method and
+% inverse quadratic interpolation; therefore, having reliability of
+% bracketing methods and fast computing of open methods. 
+% Brent's Method was developed by Richard Brent (1973).
+figure('Name','Brents Method')
+[rootValNR,errorValNR,iterNumbNR,elapsedTimeNR] = ...
+    brents(func,x1,x2,x3,terminationCriteria,maxIterations);
