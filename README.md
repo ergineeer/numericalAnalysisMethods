@@ -1,7 +1,7 @@
 # numericalAnalysisMethods
 Functions for numerical analysis methods.
 
-Provided function is plotted in the interval of x=[-14:5] for illustration. 
+Provided function is plotted in the interval of [-14:5] for illustration. 
 
 Root-Finding Algorithms
 - Bracketing Methods
