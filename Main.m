@@ -1,7 +1,7 @@
 % % % % % % % % % % %
 % 
 % Not Complete
-% 18/03/2021
+% 22/03/2021
 % 
 % % % % % % % % % % %
 
@@ -44,6 +44,14 @@ figure('Name','False-Position Method')
 figure('Name','Newton-Raphson Method')
 [rootValNR,errorValNR,iterNumbNR,elapsedTimeNR] = ...
     newtonraphson(func,dFunc,xl,terminationCriteria,maxIterations);
+    
+%% Open Methods - Secant Method
+% Secant Method does not require evaluation for the derivation, instead 
+% it uses a finite difference to approximate the derivative. The Method 
+% divides each interval by the secant line connecting to the endpoints. 
+figure('Name','Secant Method')
+[rootValSM,errorValSM,iterNumbSM,elapsedTimeSM] = ...
+    secant(func,xl,x2,terminationCriteria,maxIterations);
     
 %% Open Methods - Brent's Method
 % Also known as Van Wijngaarden-Dekker-Brent Method.
