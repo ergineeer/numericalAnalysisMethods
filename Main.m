@@ -52,5 +52,5 @@ figure('Name','Newton-Raphson Method')
 % bracketing methods and fast computing of open methods. 
 % Brent's Method was developed by Richard Brent (1973).
 figure('Name','Brents Method')
-[rootValNR,errorValNR,iterNumbNR,elapsedTimeNR] = ...
+[rootValBM,errorValBM,iterNumbBM,elapsedTimeBM] = ...
     brents(func,x1,x2,x3,terminationCriteria,maxIterations);
