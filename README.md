@@ -12,8 +12,7 @@ Root-Finding Algorithms
 - Open Methods
   - Newton-Raphson Method  
     The Newton-Raphson method is a widely used root-finding algorithm. Method successively and numerically obtains better results and approximations for the roots. It is based on the idea of linear approximation and named after Isaac Newton and Joseph Raphson. For the derivative of the input function, it might be useful to use diff + matlabFunction + sym instead.  
+  - Secant Method  
+    Secant Method does not require evaluation for the derivation, instead it uses a finite difference to approximate the derivative. The Method divides each interval by the secant line connecting to the endpoints.   
   - Brent's Method  
     Brent's Method is also known as Van Wijngaarden-Dekker-Brent Method. It is a hybrid approach combining the Bisection Method and inverse quadratic interpolation; therefore, having reliability of bracketing methods and fast computing of open methods. Brent's Method was developed by Richard Brent (1973).  
-
-
-The Secant Method will be added soon.
